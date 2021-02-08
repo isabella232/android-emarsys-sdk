@@ -35,6 +35,7 @@ open class SampleApplication : Application(), EventHandler, NotificationInformat
 
         createNotificationChannels()
         Emarsys.setup(config)
+        WebView.setWebContentsDebuggingEnabled(true)
 
         if (getApplicationCode() != null) {
             setupEventHandlers()
